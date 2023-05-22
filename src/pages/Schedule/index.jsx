@@ -4,6 +4,7 @@ import DiscoverySession from '../../components/DiscoveryAsk';
 import SmallHero from '../../components/SmallHero';
 import Pantry from '../../assets/pantry.jpg';
 import Cooking from '../../assets/cooking.jpg';
+import WWM2 from '../../assets/wwm2.jpg';
 
 const Schedule = () => {
   return (
@@ -14,9 +15,16 @@ const Schedule = () => {
         <h1 className='title'>Work with me</h1>
         <p className='value-prop-summary'>In each one-on-one session, we will focus on nutrition, gut health, sleep, stress management, and more. We will address obstacles and come up with solutions to set you up for success. Together, we will develop a completely customized plan to help you meet your own health and wellness goals both short and long term. This is not a &#x2018;one-size-fits-all&#x2019; approach. Sessions can be held in person, via a secure web-based virtual platform or by phone.</p>
       </section>
-      <section className="wwm-section">
+      <section className='wwm-section-flex-with-img'>
+        <article className='small-section'>
           <p className='value-prop-summary title-three'>Starter Package</p>
           <p className='value-prop-summary'>It can be difficult to determine the best plan to help you achieve your goals. Because everyone is different, we will tailor this Starter program around your goals, your lifestyle, eating habits, body composition, and metabolism. Together we will navigate and address the challenges that inevitably arise.</p>
+        </article>
+        <figure className='fig-img'>
+          <img src={WWM2} style={{opacity: '.7'}} alt="woman in a pantry" />
+        </figure>
+      </section>
+      <section className="wwm-section">
         <article className='small-section'>
           <p className='value-prop-summary title-three'>This package includes 3 sessions:</p>
           <p className='value-prop-summary title-four'>90-minute initial consultation which includes:</p>  
@@ -50,7 +58,7 @@ const Schedule = () => {
           <p className='value-prop-summary indented'>In this one-hour session, we will work together to go through your pantry and/or refrigerator and make decisions on what can stay and what has to go. You will end the session feeling more confident on how to shop the grocery store aisles and how to read the labels on your food.</p>
         </article>
         <figure className='fig-img'>
-          <img src={Pantry} alt="woman in a pantry" />
+          <img src={Pantry} style={{opacity: '.7'}} alt="woman in a pantry" />
         </figure>
       </section>
       <div className='disc-div'>
@@ -68,7 +76,7 @@ const Schedule = () => {
       </section>
       <section className='wwm-section-flex-with-img'>
         <figure className='fig-img'>
-          <img src={Cooking} alt="vegetables and a person's hands cutting vegetables" />
+          <img src={Cooking} style={{opacity: '.7'}} alt="vegetables and a person's hands cutting vegetables" />
         </figure>
         <article className='small-section'>
           <p className='value-prop-summary title-three'>Cooking 101</p>

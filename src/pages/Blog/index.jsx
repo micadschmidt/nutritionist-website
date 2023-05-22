@@ -6,7 +6,6 @@ const Blog = () => {
   return (
     <main>
       <section className='blog-container'>
-        <h1>My Blog Page</h1>
         <BlogCard />
       </section>
     </main>

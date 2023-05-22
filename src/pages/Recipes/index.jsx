@@ -6,7 +6,6 @@ const Recipes = () => {
   return (
     <main>
       <section className='blog-container'>
-        <h1>Recipes</h1>
         <RecipeCard />
       </section>
     </main>

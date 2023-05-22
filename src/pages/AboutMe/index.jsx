@@ -28,7 +28,7 @@ const AboutMe = () => {
             </li>
             <li>
               <p className='bio-item'>
-                Bachelor of Science degree from Penn State University
+                Master of Science in Clinical Nutrition from Maryland University of Integrative Health
               </p>
             </li>
             <li>
