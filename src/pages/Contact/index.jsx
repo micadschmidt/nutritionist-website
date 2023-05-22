@@ -130,7 +130,7 @@ const Contact = () => {
         <div>
           <p>First Name <span>*</span></p>
           <label htmlFor="name"></label>
-          <input type="text" defaultValue={firstName} onBlur={handleChange} name="First Name" />
+          <input type="text" defaultValue={firstName} onBlur={handleChange} name="First Name" onSubmit="submit"/>
         {fNameError && (
           <p className="error-text">{fNameError}</p>
         )}
@@ -211,7 +211,7 @@ const Contact = () => {
             <p className="error-text">{errorMessage}</p>
           </div>
         )} */}
-        <button type="submit" className="cta-button" >send request</button>
+        <button type="submit" className="cta-button">send request</button>
       </form>
     </div>
   )
