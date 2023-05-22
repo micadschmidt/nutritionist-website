@@ -41,7 +41,7 @@ const Contact = () => {
         }
       } else {
         switch(e.target.name) {
-          case "firstName":
+          case "First Name":
             if (!e.target.value.length) {
               setFNameError(`Please enter your first name`)
               setErrorMessage(true)
@@ -50,7 +50,7 @@ const Contact = () => {
               setErrorMessage(false)
             }
             break;
-          case "lastName":
+          case "Last Name":
             if (!e.target.value.length) {
               setLNameError(`Please enter your last name`)
               setErrorMessage(true)
@@ -131,7 +131,7 @@ const Contact = () => {
         <div>
           <p>First Name <span>*</span></p>
           <label htmlFor="firstName"></label>
-          <input type="text" defaultValue={firstName} onBlur={handleChange} name="firstName"/>
+          <input type="text" defaultValue={firstName} onBlur={handleChange} name="First Name"/>
         {fNameError && (
           <p className="error-text">{fNameError}</p>
         )}
@@ -139,7 +139,7 @@ const Contact = () => {
         <div>
           <p>Last Name <span>*</span></p>
           <label htmlFor="lastName"></label>
-          <input type="text" defaultValue={lastName} onBlur={handleChange} name="lastName" />
+          <input type="text" defaultValue={lastName} onBlur={handleChange} name="Last Name" />
         {lNameError && (
           <p className="error-text">{lNameError}</p>
         )}
