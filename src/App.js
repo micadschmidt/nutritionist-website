@@ -22,6 +22,7 @@ import {
   import Contact from "./pages/Contact";
   import GuideSignup from "./pages/GuideSignup";
   import ErrorPage from "./components/ErrorPage";
+  import Success from "./pages/Success";
   import { ScrollToTop } from "./utils";
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/retreats" element={<Retreats />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/emailsignup" element={<GuideSignup />} />
+        <Route path="/success" element={<Success />} />
         <Route path="*" element={<ErrorPage />} />
       </Route>
     )
