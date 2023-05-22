@@ -1,0 +1,27 @@
+.nutrigenomix-logo {
+  width: 70vw;
+}
+.testing-button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.testing-button-container article {
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .nutrigenomix-logo {
+    width: 90vw;;
+  }
+
+  .testing-button-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testing-button-container article {
+    margin: 10px 0;
+  }
+}

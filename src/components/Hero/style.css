@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;700&display=swap');
+
+.hero-image {
+  background-image: url('../../assets/vegetables-1948264_640 2.png');
+  width: 100vw;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  width: 35vw;
+  position: absolute;
+  top: 75%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text h1 {
+  /* text-transform: lowercase; */
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 48px;
+  font-weight:400;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-image {
+    opacity: 0.7;
+  }
+
+
+  .hero-text {
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    width: 60vw;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+    font-weight: normal;
+  }
+}

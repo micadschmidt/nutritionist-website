@@ -1,0 +1,132 @@
+.bg-gray {
+  background-color: #fbfaf8;
+}
+
+.bg-gray h1 {
+  margin: 0;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.card {
+  display: block;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  background-color: #efefef;
+  width: 30vw;
+  margin: 20px;
+  padding-bottom: 20px;
+}
+
+.card h2 {
+  font-weight: 400;
+  text-align: center;
+  margin: 15px 0;
+}
+.card p {
+  margin: 15px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  background-color: #fbfaf8;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1vh 0 30vh 0;
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  width: 100%;
+  margin: 0;
+  /* position: absolute;
+  bottom: 20px; */
+}
+
+.down{
+  transform: translateY(5%);
+  transition: .25s;
+}
+
+.up {
+  transition: .25s;
+}
+
+.down:hover {
+  transform: translateY(4%);
+  box-shadow: 10px 5px 5px #b3acac;
+  transition: .25s;
+}
+
+.up:hover {
+  transform: translateY(-1%);
+  box-shadow: 10px 5px 5px #b3acac;
+  transition: .25s;
+}
+
+.infoImg {
+  width: 100%;
+  /* height: 400px; */
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .card {
+      width: 90vw;
+      padding: 10px 0 20px 0;
+    }
+
+  .card-container {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 10vh;
+    width: 100vw;
+  }
+
+  .card-container h1 {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: lowercase;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: solid #d6b99a;
+  }
+
+  .down {
+    transform: translateY(0);
+    box-shadow: 5px 5px 5px #b3acac;
+  }
+
+  .up {
+    box-shadow: 5px 5px 5px #b3acac;
+  }
+
+  .down:hover {
+    transform: translateY(0);
+  }
+  
+  .up:hover {
+    transform: translateY(0);
+  }
+
+  .infoImg {
+    width: 85%;
+    margin: 10px;
+  }
+
+}

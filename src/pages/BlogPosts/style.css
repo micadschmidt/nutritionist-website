@@ -1,0 +1,37 @@
+.post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.post {
+  width: 70%;
+  margin: 30px;
+}
+
+.post h1 {
+  font-size: 20px;
+  margin-left: -30px;
+  font-weight: 400;
+}
+
+.indented {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .post {
+    width: 80%;
+  }
+
+  .post h1 {
+    margin: 0
+  }
+
+  .indented {
+    margin-left: 20px;
+  }
+}

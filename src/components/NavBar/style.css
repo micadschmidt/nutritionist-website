@@ -1,0 +1,145 @@
+/* .container {
+  height: 100px;
+  padding-right: 10%;
+} */
+
+nav {
+  background-color: #ffffff;
+}
+
+.nav-area {
+  position: relative;
+  /* top: 0; */
+  z-index: 100;
+}
+
+.logo-img {
+  width: 250px;
+  height: 250px;
+}
+
+.navigation {
+  height: 9em;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem 0.5rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .active {
+  opacity: .25;
+} */
+
+.contact-link {
+  margin: 0 60px;
+}
+
+.navigation-menu ul {
+  display: flex;
+  padding: 0;
+}
+
+.navigation-menu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.navigation-menu li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  /* font-size: 16px; */
+  font-size: clamp(0.5rem, 1.25vw, 1.25rem);
+  font-weight: lighter;
+  color: black;
+}
+
+.navigation li a:hover {
+  font-weight: bold;
+}
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.nav-active {
+  font-weight: bold !important;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-link {
+      margin: 0;
+    }
+    .hamburger {
+        display: block;
+      }
+
+    .logo-img {
+      width: 150px;
+      height: 150px;
+    }
+
+    .navigation {
+      height: 6em;
+    }
+
+    .navigation-menu ul {
+      position: absolute;
+      top: 0;
+      left: 0;
+      flex-direction: column;
+      width: 0;
+      height: calc(100vh);
+      background-color: #faf7f5;
+      /* display: none; */
+      transition: .5s ease;
+      z-index: 2;
+    }
+
+    .navigation-menu.expanded ul {
+      width: 80vw;
+      /* display: block; */
+    }
+
+    .navigation-menu.expanded li {
+      display: block;
+    }
+
+    .navigation-menu li {
+      text-align: left;
+      margin: 0;
+      padding-left: 20px;
+      display: none;
+    }
+
+    .navigation-menu li a {
+      color: black;
+      width: 80vw;
+      padding: 1.5rem 0;
+      letter-spacing: .2rem;
+      font-size: 1.25rem;
+      line-height: 1rem;
+      transition: .5s ease;
+    }
+
+    .navigation-menu li:hover {
+      background-color: #eee;
+    }
+
+
+
+}

@@ -1,0 +1,17 @@
+.blog-container {
+  background-color: #eeeeee;
+  width: 100vw;
+  /* min-height: 500px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-container h1 {
+  text-transform: lowercase;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 48px;
+  font-weight:400;
+  margin-top: 1rem;
+}
