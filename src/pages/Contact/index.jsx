@@ -126,11 +126,11 @@ const Contact = () => {
       <h1 className='title-two'>Let's Get Started!</h1>
       <p className='value-prop-summary'>I am pleased to provide you with a Complementary 15-minute Discovery call to meet you and learn about your health, wellness, and nutritional concerns. This is a time for us to assess how we could work together. Given that we are a good fit, we will discuss my recommendations for moving forward and booking your 90-minute initial consultation. I am happy to meet with you in person, over the phone, or via zoom. Please use the form below or email me directly at <span><a href="mailto:Kristen@TheNutritionalNest.com">Kristen@TheNutritionalNest.com</a></span></p>
       </section>
-      <form className="contact-form" name="contact" method="POST" netlify>
+      <form className="contact-form" name="contact" method="POST"  onSubmit="submit" netlify>
         <div>
           <p>First Name <span>*</span></p>
           <label htmlFor="name"></label>
-          <input type="text" defaultValue={firstName} onBlur={handleChange} name="First Name" onSubmit="submit"/>
+          <input type="text" defaultValue={firstName} onBlur={handleChange} name="First Name"/>
         {fNameError && (
           <p className="error-text">{fNameError}</p>
         )}
