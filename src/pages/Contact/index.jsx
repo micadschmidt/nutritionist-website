@@ -41,7 +41,7 @@ const Contact = () => {
         }
       } else {
         switch(e.target.name) {
-          case "First Name":
+          case "firstName":
             if (!e.target.value.length) {
               setFNameError(`Please enter your first name`)
               setErrorMessage(true)
@@ -50,7 +50,7 @@ const Contact = () => {
               setErrorMessage(false)
             }
             break;
-          case "Last Name":
+          case "lastName":
             if (!e.target.value.length) {
               setLNameError(`Please enter your last name`)
               setErrorMessage(true)
@@ -127,18 +127,19 @@ const Contact = () => {
       <p className='value-prop-summary'>I am pleased to provide you with a Complementary 15-minute Discovery call to meet you and learn about your health, wellness, and nutritional concerns. This is a time for us to assess how we could work together. Given that we are a good fit, we will discuss my recommendations for moving forward and booking your 90-minute initial consultation. I am happy to meet with you in person, over the phone, or via zoom. Please use the form below or email me directly at <span><a href="mailto:Kristen@TheNutritionalNest.com">Kristen@TheNutritionalNest.com</a></span></p>
       </section>
       <form className="contact-form" name="contact" method="POST"  onSubmit="submit" netlify>
+        <input type="hidden" name="form-name" value="contact" />
         <div>
           <p>First Name <span>*</span></p>
-          <label htmlFor="name"></label>
-          <input type="text" defaultValue={firstName} onBlur={handleChange} name="First Name"/>
+          <label htmlFor="firstName"></label>
+          <input type="text" defaultValue={firstName} onBlur={handleChange} name="firstName"/>
         {fNameError && (
           <p className="error-text">{fNameError}</p>
         )}
         </div>
         <div>
           <p>Last Name <span>*</span></p>
-          <label htmlFor="name"></label>
-          <input type="text" defaultValue={lastName} onBlur={handleChange} name="Last Name" />
+          <label htmlFor="lastName"></label>
+          <input type="text" defaultValue={lastName} onBlur={handleChange} name="lastName" />
         {lNameError && (
           <p className="error-text">{lNameError}</p>
         )}
@@ -206,12 +207,7 @@ const Contact = () => {
           <label htmlFor="concerns"></label>
           <textarea name="concerns" defaultValue={concerns} rows="5"/>
         </div>
-        {/* {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )} */}
-        <button type="submit" className="cta-button">send request</button>
+        <button type="submit" value="Submit message" className="cta-button">send request</button>
       </form>
     </div>
   )
