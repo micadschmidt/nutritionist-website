@@ -16,7 +16,7 @@
 }
 
 .contact-form div input, textarea {
-  width: 500px;
+  width: 60vw;
   height: 50px;
   margin: 5px 0 0 0;
   border: #b3acac solid .5px;
@@ -44,7 +44,7 @@
     box-shadow: none;
   }
   .contact-form div input, textarea {
-    width: 300px;
+    width: 80vw;
   }
 
 

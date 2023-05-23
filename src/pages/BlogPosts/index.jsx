@@ -13,6 +13,8 @@ const BlogPost = () => {
     const characterOne = textVal.split('')
     if(isNaN(parseInt(characterOne[6])) && characterOne[6] !== '•') {
       return (<p className='value-prop-summary' key={i}>{textVal}</p>)
+    } else if(!isNaN(parseInt(characterOne[6]))) {
+      return (<p className='post-section-heading' key={i}>{textVal}</p>)
     } else {
       return (<p className='value-prop-summary indented' key={i}>{textVal}</p>)
     }
@@ -21,7 +23,7 @@ const BlogPost = () => {
   return (
     <div className='post-container'>
       <div className='post'>
-        <h1>{blogTitle}</h1>
+        <h1 className='blog'>{blogTitle}</h1>
         {newMark.map((paragraph, i) => (
           firstChar(paragraph, i)
         ))}

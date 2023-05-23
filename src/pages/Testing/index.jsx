@@ -52,6 +52,49 @@ function Testing() {
           />
         </article>
       </section>
+      <section className='textContainer-two'>
+        <h3 className='title-two about'>Additional Testing</h3>
+        <section className='wwm-section-flex-other'>
+          <article>
+            <ul>
+              <li className='indented'>
+                <p className='value-prop-summary'>Adrenal & Stress</p>
+              </li>
+              <li className='indented'>
+                <p className='value-prop-summary'>Allergies & Sensitivities</p>
+              </li>
+              <li className='indented'>
+                <p className='value-prop-summary'>Autoimmune</p>
+              </li>
+              <li className='indented'>
+                <p className='value-prop-summary'>Female Health</p>
+              </li>
+              <li className='indented'>
+                <p className='value-prop-summary'>Gastrointestinal</p>
+              </li>
+            </ul>
+          </article>
+          <article>
+            <ul>
+              <li className='indented'>
+                <p className='value-prop-summary'>Hormones</p>
+              </li>
+              <li className='indented'>
+                <p className='value-prop-summary'>Male Health</p>
+              </li>
+              <li className='indented'>
+                <p className='value-prop-summary'>Metabolic Function</p>
+              </li>
+              <li className='indented'>
+                <p className='value-prop-summary'>Oxidative Stress</p>
+              </li>
+              <li className='indented'>
+                <p className='value-prop-summary'>Sleep</p>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </section>
     </section>
   )
 }

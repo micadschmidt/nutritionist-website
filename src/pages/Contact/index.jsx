@@ -124,7 +124,7 @@ const Contact = () => {
     <div className='wwm-container'>
       <section className='technical-stuff'>
       <h1 className='title-two'>Let's Get Started!</h1>
-      <p className='value-prop-summary'>I am pleased to provide you with a Complementary 15-minute Discovery call to meet you and learn about your health, wellness, and nutritional concerns. This is a time for us to assess how we could work together. Given that we are a good fit, we will discuss my recommendations for moving forward and booking your 90-minute initial consultation. I am happy to meet with you in person, over the phone, or via zoom. Please use the form below or email me directly at <span><a href="mailto:Kristen@TheNutritionalNest.com">Kristen@TheNutritionalNest.com</a></span></p>
+      <p className='value-prop-summary'>I am pleased to provide you with a Complementary 15-minute Discovery call to meet you and learn about your health, wellness, and nutritional concerns. This is a time for us to assess how we could work together. Given that we are a good fit, we will discuss my recommendations for moving forward and booking your 90-minute initial consultation. I am happy to meet with you in person, over the phone, or via zoom. Please use the form below or email me directly at <span><a style={{textTransform: "none"}} href="mailto:Kristen@TheNutritionalNest.com">Kristen@TheNutritionalNest.com</a></span></p>
       </section>
       <form className="contact-form" name="contact" method="POST"  onSubmit="submit" action="/success" netlify>
         <input type="hidden" name="form-name" value="contact" />
@@ -203,7 +203,7 @@ const Contact = () => {
           <textarea name="message" defaultValue={message} rows="5"/>
         </div>
         <div>
-          <p>List your three main concerns here</p>
+          <p>What are your top three nutritional concerns you are looking to address?</p>
           <label htmlFor="concerns"></label>
           <textarea name="concerns" defaultValue={concerns} rows="5"/>
         </div>

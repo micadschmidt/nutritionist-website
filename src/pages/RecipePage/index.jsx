@@ -13,12 +13,16 @@ const RecipePost = () => {
 
   const firstChar = (textVal, i) => {
     const characterOne = textVal.split('')
-    if(isNaN(parseInt(characterOne[6])) && characterOne[6] !== '•') {
+    if (textVal === "      Instructions:" || textVal === "Ingredients:" || textVal === "      Ingredients:" || textVal === "      Directions:") {
+      return (<p className='post-section-heading' key={i}>{textVal}</p>)
+    }else if(isNaN(parseInt(characterOne[6])) && characterOne[6] !== '•') {
       return (<p className='value-prop-summary' key={i}>{textVal}</p>)
     } else {
       return (<p className='value-prop-summary indented' key={i}>{textVal}</p>)
     }
   }
+  //(textVal === "Instructions:" || textVal === "Ingredients:")
+  // (isNaN(parseInt(characterOne[6])) && characterOne[6] !== '•')
   
   return (
     <div className='post-container'>

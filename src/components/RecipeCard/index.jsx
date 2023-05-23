@@ -8,7 +8,7 @@ const RecipeCard = () => {
       description: `These black bean brownies are healthy brownies that do not taste healthy. They are rich in proteins, fibers and complex carbohydrates.`,
       textAlignment: `right`,
       markDown: `
-      Ingredients:\n
+      \nIngredients:\n
       •	1 can black beans, rinsed and drained\n
       •	2 large eggs\n
       •	1/2 cup cocoa powder\n

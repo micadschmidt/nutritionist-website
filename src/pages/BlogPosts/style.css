@@ -13,13 +13,20 @@
 }
 
 .post h1 {
-  font-size: 20px;
+  font-size: 30px;
   margin-left: -30px;
   font-weight: 400;
+  text-transform: none;
 }
 
 .indented {
   margin-left: 30px;
+}
+
+.post-section-heading {
+  text-transform: none;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {

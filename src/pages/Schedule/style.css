@@ -34,7 +34,15 @@
   flex-direction: row;
   justify-content: space-around;
   width: 80%;
-  margin: 30px 0;;
+  margin: 30px 0;
+}
+
+.wwm-section-flex-other {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 30px 0;
 }
 
 .wwm-section-flex-with-img {
@@ -46,7 +54,10 @@
   margin: 30px 0;
 }
 
-.wwm-section-flex article {
+.wwm-section-flex article,
+.wwm-section-flex-with-img article,
+.wwm-section-flex-other article
+{
   margin: 0 20px
 }
 
