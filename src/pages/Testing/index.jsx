@@ -39,21 +39,14 @@ function Testing() {
       <section className='testing-button-container'>
         <article>
           <CtaButton
-            buttonText="Download Brochure"
+            buttonText="Download Brochure Here"
             linkAddress="https://nutrigenomix.com/storage/pages/about-nutrigenomix.pdf"
             newTab={true}
           />
         </article>
-        <article>
-          <CtaButton
-            buttonText="See a sample test result"
-            linkAddress="https://kendallmackintosh.com/wp-content/uploads/2022/09/Health-Sample-Report-en-ca.pdf"
-            newTab={true}
-          />
-        </article>
-      </section>
-      <section className='video-container'>
+      <article className='video-container'>
         <iframe src="https://www.youtube.com/embed/Sn7mdcoRiQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </article>
       </section>
       <section className='textContainer-two'>
         <h3 className='title-two about'>Additional Testing</h3>
