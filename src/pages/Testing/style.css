@@ -11,6 +11,12 @@
   margin: 10px;
 }
 
+.textContainer-three {
+  /* TODO: set to 50% down from top */
+  width: 60vw;
+  margin-top: 40px;
+}
+
 @media screen and (max-width: 768px) {
   .nutrigenomix-logo {
     width: 90vw;;
