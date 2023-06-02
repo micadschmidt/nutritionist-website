@@ -294,6 +294,7 @@ const RecipeCard = () => {
             <section>
               <h1 className='title-two blog'>{post.title}</h1>
               <p className='value-prop-summary'>{post.description}</p>
+              <p className='value-prop-summary learn-more'>Get the recipe!</p>
             </section>
             <img src={require(`../../assets/recipeImages/${i}.jpg`)} alt="" />
           </article>

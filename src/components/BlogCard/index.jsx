@@ -195,6 +195,7 @@ const BlogCard = () => {
             <section>
               <h1 className='title-two blog'>{post.title}</h1>
               <p className='value-prop-summary'>{post.description}</p>
+              <p className='value-prop-summary learn-more'>Learn more ...</p>
             </section>
             <img src={require(`../../assets/blogImages/${i}.jpg`)} alt="" />
           </article>
