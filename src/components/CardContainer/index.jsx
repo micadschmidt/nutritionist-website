@@ -14,7 +14,7 @@ const CardContainer = () => {
       </div>
       <div className='card-container'>
 
-        <div className='card down'>
+        <div className='card up'>
           <div className='card-top'>
             <img src={aboutimg} className="infoImg" alt="about kristen"></img>  
           </div>
@@ -43,7 +43,7 @@ const CardContainer = () => {
           </div>
         </div>
 
-        <div className='card down'>
+        <div className='card up'>
           <div className='card-top'>
             <img src={freeplan} className="infoImg" alt="get my free plan"></img>    
           </div>

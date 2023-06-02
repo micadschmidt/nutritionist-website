@@ -50,16 +50,16 @@ const NavBar = () => {
               <Link to={`schedule`} className={location.pathname === '/schedule' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>WORK WITH ME</Link>
             </li>
             <li>
-              <Link to={`blog`} className={location.pathname === '/blog' ? "nav-active" : location.pathname === '/blog/blogpost' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>BLOG</Link>
+              <Link to={`/testing`} className={location.pathname === '/testing' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>TESTING</Link>
             </li>
             <li>
-              <Link to={`/testing`} className={location.pathname === '/testing' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>TESTING</Link>
+              <Link to={`/retreats`} className={location.pathname === '/retreats' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>RETREATS</Link>
             </li>
             <li>
               <Link to={`/recipes`} className={location.pathname === '/recipes' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>RECIPES</Link>
             </li>
             <li>
-              <Link to={`/retreats`} className={location.pathname === '/retreats' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>RETREATS</Link>
+              <Link to={`blog`} className={location.pathname === '/blog' ? "nav-active" : location.pathname === '/blog/blogpost' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>BLOG</Link>
             </li>
             <li>
               <Link to={`/contact`} className={location.pathname === '/contact' ? "contact-link nav-active" : "contact-link"} onClick={() => {setNavExpanded(!navExpanded)}}>CONTACT</Link>

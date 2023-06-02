@@ -16,17 +16,12 @@ const Contact = () => {
     message: '',
     concerns: '',
   })
-    const { firstName, lastName, email, phone, address1, address2, city, state, zip, message, concerns } = formState;
+    const { firstName, lastName, email, phone, concerns } = formState;
 
     const [errorMessage, setErrorMessage] = useState(false)
     const [emailError, setEmailError] = useState('')
     const [fNameError, setFNameError] = useState('')
     const [lNameError, setLNameError] = useState('')
-    const [phoneError, setPhoneError] = useState('')
-    const [addressError, setAddressError] = useState('')
-    const [cityError, setCityError] = useState('')
-    const [stateError, setStateError] = useState('')
-    const [zipError, setZipError] = useState('')
 
     const handleChange = (e) => {
     
@@ -59,51 +54,51 @@ const Contact = () => {
               setErrorMessage(false)
             }
             break;
-          case "phone":
-            if (!e.target.value.length) {
-              setPhoneError(`Please enter your phone number`)
-              setErrorMessage(true)
-            } else {
-              setPhoneError('')
-              setErrorMessage(false)
-            }
-            break;
-          case "address1":
-            if (!e.target.value.length) {
-              setAddressError(`Please enter your address`)
-              setErrorMessage(true)
-            } else {
-              setAddressError('')
-              setErrorMessage(false)
-            }
-            break;
-          case "city":
-            if (!e.target.value.length) {
-              setCityError(`Please enter your city`)
-              setErrorMessage(true)
-            } else {
-              setCityError('')
-              setErrorMessage(false)
-            }
-            break;
-          case "state":
-            if (!e.target.value.length) {
-              setStateError(`Please enter your state`)
-              setErrorMessage(true)
-            } else {
-              setStateError('')
-              setErrorMessage(false)
-            }
-            break;
-          case "zip":
-            if (!e.target.value.length) {
-              setZipError(`Please enter your zip code`)
-              setErrorMessage(true)
-            } else {
-              setZipError('')
-              setErrorMessage(false)
-            }
-            break;
+          // case "phone":
+          //   if (!e.target.value.length) {
+          //     setPhoneError(`Please enter your phone number`)
+          //     setErrorMessage(true)
+          //   } else {
+          //     setPhoneError('')
+          //     setErrorMessage(false)
+          //   }
+          //   break;
+          // case "address1":
+          //   if (!e.target.value.length) {
+          //     setAddressError(`Please enter your address`)
+          //     setErrorMessage(true)
+          //   } else {
+          //     setAddressError('')
+          //     setErrorMessage(false)
+          //   }
+          //   break;
+          // case "city":
+          //   if (!e.target.value.length) {
+          //     setCityError(`Please enter your city`)
+          //     setErrorMessage(true)
+          //   } else {
+          //     setCityError('')
+          //     setErrorMessage(false)
+          //   }
+          //   break;
+          // case "state":
+          //   if (!e.target.value.length) {
+          //     setStateError(`Please enter your state`)
+          //     setErrorMessage(true)
+          //   } else {
+          //     setStateError('')
+          //     setErrorMessage(false)
+          //   }
+          //   break;
+          // case "zip":
+          //   if (!e.target.value.length) {
+          //     setZipError(`Please enter your zip code`)
+          //     setErrorMessage(true)
+          //   } else {
+          //     setZipError('')
+          //     setErrorMessage(false)
+          //   }
+          //   break;
         }
     } 
 
@@ -123,8 +118,8 @@ const Contact = () => {
   return (
     <div className='wwm-container'>
       <section className='technical-stuff'>
-      <h1 className='title-two'>Let's Get Started!</h1>
-      <p className='value-prop-summary'>I am pleased to provide you with a Complementary 15-minute Discovery call to meet you and learn about your health, wellness, and nutritional concerns. This is a time for us to assess how we could work together. Given that we are a good fit, we will discuss my recommendations for moving forward and booking your 90-minute initial consultation. I am happy to meet with you in person, over the phone, or via zoom. Please use the form below or email me directly at <span><a style={{textTransform: "none"}} href="mailto:Kristen@TheNutritionalNest.com">Kristen@TheNutritionalNest.com</a></span></p>
+        <h1 className='title-two'>Let's Get Started!</h1>
+        <p className='value-prop-summary'>I am pleased to provide you with a Complementary 15-minute Discovery call to meet you and learn about your health, wellness, and nutritional concerns. This is a time for us to assess how we could work together. Given that we are a good fit, we will discuss my recommendations for moving forward and booking your 90-minute initial consultation. I am happy to meet with you in person, over the phone, or via zoom. Please use the form below or email me directly at <span><a style={{textTransform: "none"}} href="mailto:Kristen@TheNutritionalNest.com">Kristen@TheNutritionalNest.com</a></span></p>
       </section>
       <form className="contact-form" name="contact" method="POST"  onSubmit="submit" action="/success" netlify>
         <input type="hidden" name="form-name" value="contact" />
@@ -153,14 +148,11 @@ const Contact = () => {
         )}
         </div>
         <div>
-          <p>Phone Number <span>*</span></p>
+          <p>Phone Number</p>
           <label htmlFor="phone"></label>
           <input type="phone" defaultValue={phone} onBlur={handleChange} name="phone"/>
-        {phoneError && (
-          <p className="error-text">{phoneError}</p>
-        )}
         </div>
-        <div>
+        {/* <div>
           <p>Address Line 1 <span>*</span></p>
           <label htmlFor="address1"></label>
           <input type="text" defaultValue={address1} onBlur={handleChange} name="address1"/>
@@ -196,14 +188,14 @@ const Contact = () => {
           {zipError && (
             <p className="error-text">{zipError}</p>
           )}
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <p>What area are you primarily looking for help in</p>
           <label htmlFor="message"></label>
           <textarea name="message" defaultValue={message} rows="5"/>
-        </div>
+        </div> */}
         <div>
-          <p>What are your top three nutritional concerns you are looking to address?</p>
+          <p>What are your primary nutritional/health concerns</p>
           <label htmlFor="concerns"></label>
           <textarea name="concerns" defaultValue={concerns} rows="5"/>
         </div>
