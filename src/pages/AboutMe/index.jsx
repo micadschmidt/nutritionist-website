@@ -16,11 +16,11 @@ const AboutMe = () => {
         </div>
 
         <div className='textContainer'>
-          <h1 className='title'>Hi, I'm Kristen Poleski, MS</h1>
+          <h1 className='title-two'>Hi, I'm Kristen Poleski, MS</h1>
           <p className='bio-item'>I am an Integrative & Functional Clinical Nutritionist and Health Coach. My mission is to help you heal your body through a holistic, science-based, root cause approach which takes into consideration your lifestyle factors such as food, sleep, stress, family, fitness, and spirituality.</p>
           <p className='bio-item'>As a certified yoga instructor and loving mom of four, I believe that peace can be found around food & body when we lead the journey with self-compassion. Your body has wisdom and is yearning for you to tune in to what it’s saying, and I am here to help!</p>
           <h2 className='title-two about'>My education and training include:</h2>
-          <ul>
+          <ul className='indented'>
             <li>
               <p className='bio-item'>
                 Bachelor of Science degree from Penn State University

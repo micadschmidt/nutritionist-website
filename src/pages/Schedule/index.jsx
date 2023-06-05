@@ -12,7 +12,7 @@ const Schedule = () => {
     <SmallHero />
     <div className='wwm-container'>
       <section className='technical-stuff'>
-        <h1 className='title'>Work with me</h1>
+        <h1 className='title-two' style={{textAlign: "center"}}>Work with me</h1>
         <p className='value-prop-summary'>In each one-on-one session, we will focus on nutrition, gut health, sleep, stress management, and more. We will address obstacles and come up with solutions to set you up for success. Together, we will develop a completely customized plan to help you meet your own health and wellness goals both short and long term. This is not a &#x2018;one-size-fits-all&#x2019; approach. Sessions can be held in person, via a secure web-based virtual platform or by phone.</p>
       </section>
       <section className='wwm-section-flex-with-img'>
