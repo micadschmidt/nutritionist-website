@@ -45,7 +45,6 @@ const Schedule = () => {
           <p className='value-prop-summary title-three'>Foundational Package</p>
           <p className='value-prop-summary indented'>
           This program includes everything in the Starter Package, allowing us the opportunity to work together for a total of 5 sessions building upon the nutritional foundation already established. Real and lasting changes occur over a longer period of time.</p>
-          <p className='value-prop-summary title-four'>*Discounts apply to this package</p>
         </article>
         <article className='small-section'>
           <p className='value-prop-summary title-three'>Follow-up Session</p>
