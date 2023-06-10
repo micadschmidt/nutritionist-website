@@ -1,7 +1,7 @@
 import React from 'react'
 import wwm from '../../assets/wwm.jpg'
 import freeplan from '../../assets/freeplan.jpg'
-import aboutimg from '../../assets/kristenwithdog.jpg'
+import aboutimg from '../../assets/kristenwithdog-min.jpg'
 import CtaButton from '../CtaButton';
 import { Link } from 'react-router-dom'
 import './style.css'

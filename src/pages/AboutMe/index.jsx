@@ -1,5 +1,5 @@
 import React from 'react'
-import kristen from '../../assets/Kristen_0075ed.jpg'
+import kristen from '../../assets/Kristen_0075ed-min.jpg'
 import DiscoverySession from '../../components/DiscoveryAsk';
 import './style.css'
 
