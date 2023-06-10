@@ -8,11 +8,7 @@ const Footer = () => {
       <section className='footer-nav-menu'>
         <ul>
           <li>
-            <Link to={`/`}>&copy;the nutritional nest</Link>
-          </li>
-          <li>|</li>
-          <li>
-            <Link to={`/`}>terms & conditions</Link>
+            <Link to={`/`}>&copy; 2023 the nutritional nest</Link>
           </li>
           <li>|</li>
           <li>
