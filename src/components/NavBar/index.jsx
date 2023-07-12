@@ -28,7 +28,7 @@ const NavBar = () => {
       <section className='nav-area'>
       <GuideRequest />
       <nav className={backgroundState ? "navigation active" : "navigation"}>
-          <Link to={"/"}><img className="logo-img" src={logo} /></Link>
+          <Link to={"/"}><img className="logo-img" alt="nutritional nest" src={logo} /></Link>
           <button
             className="hamburger"
             onClick={() => {

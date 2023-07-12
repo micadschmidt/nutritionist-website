@@ -3,7 +3,7 @@ import wwm from '../../assets/wwm.jpg'
 import freeplan from '../../assets/freeplan.jpg'
 import aboutimg from '../../assets/IMG_2450-min.jpeg'
 import CtaButton from '../CtaButton';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './style.css'
 
 const CardContainer = () => {
