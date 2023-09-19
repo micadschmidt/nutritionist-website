@@ -2,18 +2,20 @@
   width: 300px;
   height: 60px;
   border-radius: 10px;
-  background-color: #c7a887;
-  border: solid 0px #c7a887;
+  background-color: #F79F8B;
+  border: solid 0px #F2777F;
   color: #ffffff;
   font-size: 1.2em;
 }
 
 .cta-button:hover {
-  background-color: #fbfaf8;
-  transition: .5s;
+  background-color: #F2777F;
   cursor: pointer;
   border-width: 3px;
-  color: #000000;
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: bolder;
+  transition: 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {

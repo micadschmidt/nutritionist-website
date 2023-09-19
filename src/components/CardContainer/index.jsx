@@ -16,36 +16,36 @@ const CardContainer = () => {
 
         <div className='card up'>
           <div className='card-top'>
-            <img src={aboutimg} className="infoImg" alt="about kristen"></img>  
+            <img src={aboutimg} className="infoImg" alt="about kristen"></img>
           </div>
           <div className='card-body'>
-            <h2 className='title-two'>Meet Kristen</h2>
+            <h2 className='title-two'>Meet Cami</h2>
             <p className='value-prop-summary'>As a certified yoga instructor and loving mom of four, I believe that peace can be found around food & body when we lead the journey with self-compassion. Your body has wisdom and is yearning for you to tune in to what it’s saying, and I am here to help!</p>
           </div>
           <div className='button-div'>
             <CtaButton
               buttonText={'about me'}
-              linkAddress={`about`}  
+              linkAddress={`about`}
             />
           </div>
         </div>
 
         <div className='card up'>
           <div className='card-top'>
-            <img src={wwm} className="infoImg" alt="work with me"></img>      
+            <img src={wwm} className="infoImg" alt="work with me"></img>
           </div>
           <div className='card-body'>
             <h2 className='title-two'>Work With Me</h2>
             <p className='value-prop-summary'>Work with me one on one and we will focus on nutrition, gut health, sleep, stress management, and more. We will address obstacles and come up with solutions to set you up for success. Together, we will develop a completely customized plan to help you meet your own health and wellness goals both short and long term.</p>
           </div>
           <div className='button-div'>
-            <CtaButton buttonText={'work with Kristen'} linkAddress={'schedule'}/>
+            <CtaButton buttonText={'work with Cami'} linkAddress={'schedule'}/>
           </div>
         </div>
 
         <div className='card up'>
           <div className='card-top'>
-            <img src={freeplan} className="infoImg" alt="get my free plan"></img>    
+            <img src={freeplan} className="infoImg" alt="get my free plan"></img>
           </div>
           <div className='card-body'>
             <h2 className='title-two'>Are You Eating Clean?</h2>

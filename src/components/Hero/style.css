@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;700&display=swap');
 
 .hero-image {
-  background-image: url('../../assets/vegetables-1948264_640 2.png');
+  background-image: url('../../assets/hero.jpg');
   width: 100vw;
   height: 70vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  opacity: 0.8;
 }
 
 .hero-text {

@@ -1,6 +1,6 @@
 .navigation-centered {
-  background-color: #d6b99a;
-  height: 6.5em;
+  background-color: #7E9489;
+  height: 4.5em;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@
   .footer-nav-menu {
     display: block;
   }
-  
+
   .footer-nav-menu ul {
     flex-direction: row;
     align-items: normal;

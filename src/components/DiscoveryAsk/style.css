@@ -7,7 +7,7 @@
   justify-content: center;
   height: 6.5em;
   margin-bottom: 20px;
-  background-color: aliceblue;
+  background-color: #B0CEC0;
   padding: 40px;
   border-radius: 20px;
 }
@@ -32,7 +32,7 @@
   font-size: 20px;
   margin: 20px;
   font-family: 'Figtree', sans-serif;
-  
+
 }
 
 @media screen and (max-width: 768px) {

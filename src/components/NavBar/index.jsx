@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import logo from '../../assets/facebook-dp.png';
+import logo from "./logo.jpeg";
 import GuideRequest from '../GuideRequest';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -28,7 +28,7 @@ const NavBar = () => {
       <section className='nav-area'>
       <GuideRequest />
       <nav className={backgroundState ? "navigation active" : "navigation"}>
-          <Link to={"/"}><img className="logo-img" alt="nutritional nest" src={logo} /></Link>
+          <Link to={"/"} className="logo-a"><img className="logo-img" alt="nutricamirosen" src={logo} />Lic. Camila Rosenbrock</Link>
           <button
             className="hamburger"
             onClick={() => {
@@ -41,28 +41,28 @@ const NavBar = () => {
         <section className={ navExpanded ? "navigation-menu expanded" : "navigation-menu"}>
           <ul>
             <li>
-              <Link to={`/`} className={location.pathname === '/' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>HOME</Link>
+              <Link to={`/`} className={location.pathname === '/' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>INICIO</Link>
             </li>
             <li>
-              <Link to={`about`} className={location.pathname === '/about' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>ABOUT</Link>
+              <Link to={`about`} className={location.pathname === '/about' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>ACERCA DE MI</Link>
             </li>
             <li>
-              <Link to={`schedule`} className={location.pathname === '/schedule' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>WORK WITH ME</Link>
+              <Link to={`schedule`} className={location.pathname === '/schedule' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>SERVICIOS</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to={`/testing`} className={location.pathname === '/testing' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>TESTING</Link>
-            </li>
-            <li>
+            </li> */}
+           {/*  <li>
               <Link to={`/retreats`} className={location.pathname === '/retreats' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>RETREATS</Link>
-            </li>
+            </li> */}
             <li>
-              <Link to={`/recipes`} className={location.pathname === '/recipes' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>RECIPES</Link>
+              <Link to={`/recipes`} className={location.pathname === '/recipes' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>RECETAS</Link>
             </li>
             <li>
               <Link to={`blog`} className={location.pathname === '/blog' ? "nav-active" : location.pathname === '/blog/blogpost' ? "nav-active" : ""} onClick={() => {setNavExpanded(!navExpanded)}}>BLOG</Link>
             </li>
             <li>
-              <Link to={`/contact`} className={location.pathname === '/contact' ? "contact-link nav-active" : "contact-link"} onClick={() => {setNavExpanded(!navExpanded)}}>CONTACT</Link>
+              <Link to={`/contact`} className={location.pathname === '/contact' ? "contact-link nav-active" : "contact-link"} onClick={() => {setNavExpanded(!navExpanded)}}>CONTACTO</Link>
             </li>
           </ul>
         </section>
