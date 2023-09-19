@@ -24,7 +24,7 @@ const Contact = () => {
     const [lNameError, setLNameError] = useState('')
 
     const handleChange = (e) => {
-    
+
       if(e.target.name === 'email'){
         const isValid = validateEmail(e.target.value);
         if(!isValid) {
@@ -100,7 +100,7 @@ const Contact = () => {
           //   }
           //   break;
         }
-    } 
+    }
 
     if(!errorMessage){
       setFormState({
@@ -119,7 +119,7 @@ const Contact = () => {
     <div className='wwm-container'>
       <section className='technical-stuff'>
         <h1 className='title-two'>Let's Get Started!</h1>
-        <p className='value-prop-summary'>I am pleased to provide you with a Complementary 15-minute Discovery call to meet you and learn about your health, wellness, and nutritional concerns. This is a time for us to assess how we could work together. Given that we are a good fit, we will discuss my recommendations for moving forward and booking your 90-minute initial consultation. I am happy to meet with you in person, over the phone, or via zoom. Please use the form below or email me directly at <span><a style={{textTransform: "none"}} href="mailto:Kristen@TheNutritionalNest.com">Kristen@TheNutritionalNest.com</a></span></p>
+        <p className='value-prop-summary'>I am pleased to provide you with a Complementary 15-minute Discovery call to meet you and learn about your health, wellness, and nutritional concerns. This is a time for us to assess how we could work together. Given that we are a good fit, we will discuss my recommendations for moving forward and booking your 90-minute initial consultation. I am happy to meet with you in person, over the phone, or via zoom. Please use the form below or email me directly at <span><a style={{textTransform: "none"}} href="mailto:Kristen@TheNutritionalNest.com">nutricamirosen@gmail.com</a></span></p>
       </section>
       <form className="contact-form" name="contact" method="POST"  onSubmit="submit" action="/success" netlify>
         <input type="hidden" name="form-name" value="contact" />
