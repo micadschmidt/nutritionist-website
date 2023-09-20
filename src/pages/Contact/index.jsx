@@ -35,6 +35,7 @@ const Contact = () => {
           setErrorMessage(false)
         }
       } else {
+        // eslint-disable-next-line default-case
         switch(e.target.name) {
           case "First Name":
             if (!e.target.value.length) {

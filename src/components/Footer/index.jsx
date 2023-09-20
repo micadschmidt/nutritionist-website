@@ -12,7 +12,7 @@ const Footer = () => {
           </li>
           <li>|</li>
           <li>
-            <a target="_blank" href="https://www.instagram.com/nutricamirosen/"><i class="fab fa-instagram"></i> NUTRICAMIROSEN
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/nutricamirosen/"><i class="fab fa-instagram"></i> NUTRICAMIROSEN
             </a>
           </li>
         </ul>

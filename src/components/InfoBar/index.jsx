@@ -1,6 +1,6 @@
 import React from 'react'
 import CtaButton from '../CtaButton';
-import GuideRequest from '../GuideRequest';
+// import GuideRequest from '../GuideRequest';
 import './style.css'
 
 const InfoBar = () => {

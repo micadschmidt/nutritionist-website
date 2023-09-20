@@ -12,7 +12,7 @@ const AboutMe = () => {
           <figure className='shadow'>
             <img src={kristen} className='main-image' alt="kristen poleski"></img>
           </figure>
-          <img></img>
+          {/* <img></img> */}
         </div>
 
         <div className='textContainer'>

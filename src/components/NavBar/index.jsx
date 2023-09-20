@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
 import logo from "./logo.jpeg";
-import GuideRequest from '../GuideRequest';
+/* import GuideRequest from '../GuideRequest'; */
 import { Link, useLocation } from 'react-router-dom';
 
 const NavBar = () => {
@@ -26,7 +26,7 @@ const NavBar = () => {
   return (
     <>
       <section className='nav-area'>
-      <GuideRequest />
+      {/* <GuideRequest /> */}
       <nav className={backgroundState ? "navigation active" : "navigation"}>
           <Link to={"/"} className="logo-a"><img className="logo-img" alt="nutricamirosen" src={logo} />Lic. Camila Rosenbrock</Link>
           <button
