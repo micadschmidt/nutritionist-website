@@ -10,7 +10,7 @@ const CardContainer = () => {
   return (
     <section>
       <div className='bg-gray'>
-        <h1 className='title-two'>Let's Get Started</h1>
+        <h1 className='title-two'>Comienza el Cambio Hoy</h1>
       </div>
       <div className='card-container'>
 
@@ -19,12 +19,14 @@ const CardContainer = () => {
             <img src={aboutimg} className="infoImg" alt="about kristen"></img>
           </div>
           <div className='card-body'>
-            <h2 className='title-two'>Meet Cami</h2>
-            <p className='value-prop-summary'>As a certified yoga instructor and loving mom of four, I believe that peace can be found around food & body when we lead the journey with self-compassion. Your body has wisdom and is yearning for you to tune in to what it’s saying, and I am here to help!</p>
+            <h2 className='title-two'>Conoceme</h2>
+            <p className='value-prop-summary'>Algo que te identifique que NO esté ya escrito en la pestaña de SOBRE MI.
+            <hr />
+            <del>As a certified yoga instructor and loving mom of four, I believe that peace can be found around food & body when we lead the journey with self-compassion. Your body has wisdom and is yearning for you to tune in to what it’s saying, and I am here to help!</del></p>
           </div>
           <div className='button-div'>
             <CtaButton
-              buttonText={'about me'}
+              buttonText={'Acerca de mi'}
               linkAddress={`about`}
             />
           </div>
@@ -35,11 +37,13 @@ const CardContainer = () => {
             <img src={wwm} className="infoImg" alt="work with me"></img>
           </div>
           <div className='card-body'>
-            <h2 className='title-two'>Work With Me</h2>
-            <p className='value-prop-summary'>Work with me one on one and we will focus on nutrition, gut health, sleep, stress management, and more. We will address obstacles and come up with solutions to set you up for success. Together, we will develop a completely customized plan to help you meet your own health and wellness goals both short and long term.</p>
+            <h2 className='title-two'>Contá conmingo</h2>
+            <p className='value-prop-summary'>Aquí el motivo por el cual tu ayuda 1 a 1 y las consultas pueden ser de beneficio para multiples carencias/tipos de clientes.
+            <hr />
+            <del>Work with me one on one and we will focus on nutrition, gut health, sleep, stress management, and more. We will address obstacles and come up with solutions to set you up for success. Together, we will develop a completely customized plan to help you meet your own health and wellness goals both short and long term.</del></p>
           </div>
           <div className='button-div'>
-            <CtaButton buttonText={'work with Cami'} linkAddress={'schedule'}/>
+            <CtaButton buttonText={'Comencemos'} linkAddress={'schedule'}/>
           </div>
         </div>
 
@@ -48,8 +52,8 @@ const CardContainer = () => {
             <img src={freeplan} className="infoImg" alt="get my free plan"></img>
           </div>
           <div className='card-body'>
-            <h2 className='title-two'>Are You Eating Clean?</h2>
-            <p className='value-prop-summary'>Download my free 28 day meal guide to clean eating. You will receive simple tips that you can start to use including shopping lists and easy recipe ideas.
+            <h2 className='title-two'>Estás comiendo sano?</h2>
+            <p className='value-prop-summary'>Aquí algun servicio que brindes, ej: PDF, video, etc
             </p>
           </div>
           <div className='button-div'>
