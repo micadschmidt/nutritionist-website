@@ -6,9 +6,9 @@ const DiscoverySession = () => {
   return (
     <>
       <article className='discover'>
-        <h1 className='title discover-title'>Contact me for your free discovery session and get started on your path to wellness today!</h1>
+        <h1 className='title discover-title'>Ponete en contacto hoy para obtener la primera consulta GRATIS!</h1>
       <CtaButton
-        buttonText="Let's Get Started"
+        buttonText="El cambio es hoy"
         linkAddress="/contact"
       />
       </article>
