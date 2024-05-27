@@ -119,8 +119,10 @@ const Contact = () => {
   return (
     <div className='wwm-container'>
       <section className='technical-stuff'>
-        <h1 className='title-two'>Let's Get Started!</h1>
-        <p className='value-prop-summary'>I am pleased to provide you with a Complementary 15-minute Discovery call to meet you and learn about your health, wellness, and nutritional concerns. This is a time for us to assess how we could work together. Given that we are a good fit, we will discuss my recommendations for moving forward and booking your 90-minute initial consultation. I am happy to meet with you in person, over the phone, or via zoom. Please use the form below or email me directly at <span><a style={{textTransform: "none"}} href="mailto:Kristen@TheNutritionalNest.com">nutricamirosen@gmail.com</a></span></p>
+        <h1 className='title-two'>Comencemos!</h1>
+        <p className='value-prop-summary'>Acá me gustaria integrar una app que se llama Calendly que es para reservar consultas segun tu disponibilidad y cantidad de tiempo que pongas. Tambien dejar la opcion del email y el formulario..
+        <hr />
+        <del> I am pleased to provide you with a Complementary 15-minute Discovery call to meet you and learn about your health, wellness, and nutritional concerns. This is a time for us to assess how we could work together. Given that we are a good fit, we will discuss my recommendations for moving forward and booking your 90-minute initial consultation. I am happy to meet with you in person, over the phone, or via zoom. Please use the form below or email me directly at <span><a style={{textTransform: "none"}} href="mailto:Kristen@TheNutritionalNest.com">nutricamirosen@gmail.com</a></span></del> </p>
       </section>
       <form className="contact-form" name="contact" method="POST"  onSubmit="submit" action="/success" netlify>
         <input type="hidden" name="form-name" value="contact" />
@@ -200,7 +202,7 @@ const Contact = () => {
           <label htmlFor="concerns"></label>
           <textarea name="concerns" defaultValue={concerns} rows="5"/>
         </div>
-        <button type="submit" value="Submit message" className="cta-button">send request</button>
+        <button type="submit" value="Submit message" className="cta-button">Enviar</button>
       </form>
     </div>
   )
